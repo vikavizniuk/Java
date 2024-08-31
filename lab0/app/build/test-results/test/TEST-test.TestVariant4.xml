@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.TestVariant4" tests="37" skipped="0" failures="0" errors="0" timestamp="2024-08-23T11:42:06" hostname="MacBook-Air-Vika.local" time="0.189">
+  <properties/>
+  <testcase name="arrayTest[0](5, 2, 3, [I@3e84448c)" classname="test.TestVariant4" time="0.017"/>
+  <testcase name="arrayTest[1](4, 1, 2, [I@5562c41e)" classname="test.TestVariant4" time="0.002"/>
+  <testcase name="arrayTest[2](3, 3, 3, [I@4d0f2471)" classname="test.TestVariant4" time="0.0"/>
+  <testcase name="arrayTest[3](6, 5, 2, [I@3232a28a)" classname="test.TestVariant4" time="0.0"/>
+  <testcase name="booleanTest[0](3, 3, true)" classname="test.TestVariant4" time="0.007"/>
+  <testcase name="booleanTest[1](4, 2, true)" classname="test.TestVariant4" time="0.0"/>
+  <testcase name="forTest[0](10.0, 550.0)" classname="test.TestVariant4" time="0.04"/>
+  <testcase name="forTest[1](15.5, 852.5)" classname="test.TestVariant4" time="0.004"/>
+  <testcase name="forTest[2](5.75, 316.25)" classname="test.TestVariant4" time="0.007"/>
+  <testcase name="ifTest[0](1, 2, 3, 3)" classname="test.TestVariant4" time="0.009"/>
+  <testcase name="ifTest[1](-1, 2, -3, 1)" classname="test.TestVariant4" time="0.0"/>
+  <testcase name="ifTest[2](-1, -2, -3, 0)" classname="test.TestVariant4" time="0.0"/>
+  <testcase name="ifTest[3](1, 0, 3, 2)" classname="test.TestVariant4" time="0.0"/>
+  <testcase name="integerTest[0](100, 1, 100)" classname="test.TestVariant4" time="0.002"/>
+  <testcase name="integerTest[1](12, 3, 4)" classname="test.TestVariant4" time="0.001"/>
+  <testcase name="integerTest[2](35, 3, 11)" classname="test.TestVariant4" time="0.001"/>
+  <testcase name="invalidMonthTest" classname="test.TestVariant4" time="0.012"/>
+  <testcase name="negativeBooleanTest[0](2, 3, false)" classname="test.TestVariant4" time="0.002"/>
+  <testcase name="negativeBooleanTest[1](1, 4, false)" classname="test.TestVariant4" time="0.0"/>
+  <testcase name="negativeIntegerTest[0](3, 5)" classname="test.TestVariant4" time="0.006"/>
+  <testcase name="negativeIntegerTest[1](-2, 5)" classname="test.TestVariant4" time="0.0"/>
+  <testcase name="negativeIntegerTest[2](6, -4)" classname="test.TestVariant4" time="0.001"/>
+  <testcase name="switchTest[0](1, 31)" classname="test.TestVariant4" time="0.001"/>
+  <testcase name="switchTest[1](2, 28)" classname="test.TestVariant4" time="0.0"/>
+  <testcase name="switchTest[2](4, 30)" classname="test.TestVariant4" time="0.0"/>
+  <testcase name="switchTest[3](11, 30)" classname="test.TestVariant4" time="0.0"/>
+  <testcase name="switchTest[4](12, 31)" classname="test.TestVariant4" time="0.0"/>
+  <testcase name="twoDimensionArrayTest[0](3, 4, [I@550dbc7a, [[I@21282ed8)" classname="test.TestVariant4" time="0.006"/>
+  <testcase name="twoDimensionArrayTest[1](2, 3, [I@49049a04, [[I@71a8adcf)" classname="test.TestVariant4" time="0.001"/>
+  <testcase name="twoDimensionArrayTest[2](4, 2, [I@82de64a, [[I@659499f1)" classname="test.TestVariant4" time="0.001"/>
+  <testcase name="whileTest[0](1, true)" classname="test.TestVariant4" time="0.003"/>
+  <testcase name="whileTest[1](3, true)" classname="test.TestVariant4" time="0.0"/>
+  <testcase name="whileTest[2](9, true)" classname="test.TestVariant4" time="0.0"/>
+  <testcase name="whileTest[3](27, true)" classname="test.TestVariant4" time="0.001"/>
+  <testcase name="whileTest[4](10, false)" classname="test.TestVariant4" time="0.0"/>
+  <testcase name="whileTest[5](8, false)" classname="test.TestVariant4" time="0.0"/>
+  <testcase name="whileTest[6](12, false)" classname="test.TestVariant4" time="0.001"/>
+  <system-out><![CDATA[Cost of 1 kg of candies: 10.0
+Cost of 2 kg of candies: 20.0
+Cost of 3 kg of candies: 30.0
+Cost of 4 kg of candies: 40.0
+Cost of 5 kg of candies: 50.0
+Cost of 6 kg of candies: 60.0
+Cost of 7 kg of candies: 70.0
+Cost of 8 kg of candies: 80.0
+Cost of 9 kg of candies: 90.0
+Cost of 10 kg of candies: 100.0
+Cost of 1 kg of candies: 15.5
+Cost of 2 kg of candies: 31.0
+Cost of 3 kg of candies: 46.5
+Cost of 4 kg of candies: 62.0
+Cost of 5 kg of candies: 77.5
+Cost of 6 kg of candies: 93.0
+Cost of 7 kg of candies: 108.5
+Cost of 8 kg of candies: 124.0
+Cost of 9 kg of candies: 139.5
+Cost of 10 kg of candies: 155.0
+Cost of 1 kg of candies: 5.75
+Cost of 2 kg of candies: 11.5
+Cost of 3 kg of candies: 17.25
+Cost of 4 kg of candies: 23.0
+Cost of 5 kg of candies: 28.75
+Cost of 6 kg of candies: 34.5
+Cost of 7 kg of candies: 40.25
+Cost of 8 kg of candies: 46.0
+Cost of 9 kg of candies: 51.75
+Cost of 10 kg of candies: 57.5
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
