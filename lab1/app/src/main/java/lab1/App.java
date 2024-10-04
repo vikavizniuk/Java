@@ -1,18 +1,14 @@
 package lab1;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Date;
+
 
 public class App {
     public static void main(String[] args) {
-
-        try{
-
-        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
-        Date birthDate1 = sdf.parse("10-09-2021");
-        Date birthDate2 = sdf.parse("15-05-2019");
+        
+        LocalDate birthDate1 = LocalDate.of(2021, 9, 10);
+        LocalDate birthDate2 = LocalDate.of(2019, 5, 15);
 
         Owner owner = new Owner("Іван Іваненко", "ivan@example.com", "Київ, вул. Хрещатик, 1");
 
@@ -25,11 +21,11 @@ public class App {
         Veterinarian vet = new Veterinarian("Дмитро Коваленко", Speciality.Head);
 
         Appointment appointment = new Appointment.Builder()
-                .setPet(pet1)
-                .setVeterinarian(vet)
-                .setDateTime(LocalDateTime.of(2024, 9, 10, 14, 0))
-                .build();
-        
+            .setPet(pet1)
+            .setVeterinarian(vet)
+            .setDateTime(LocalDateTime.of(2024, 9, 10, 14, 0))
+            .build();
+            
         System.out.println("\nІнформація про запис на прийом:");
         System.out.println(appointment);
 
@@ -39,13 +35,9 @@ public class App {
         System.out.println("\nHash-коди об'єктів:");
         System.out.println("Hash-код pet1: " + pet1.hashCode());
         System.out.println("Hash-код owner: " + owner.hashCode());
-        }  catch (ParseException e) {
-            System.err.println("Помилка розбору дати: " + e.getMessage());
-        }
-    }
 
+    }
     public Object getGreeting() {
         throw new UnsupportedOperationException("Unimplemented method 'getGreeting'");
     }
 }
-

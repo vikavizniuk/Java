@@ -1,8 +1,8 @@
 package lab1;
 
-import java.util.Calendar;
+import java.time.LocalDate;
+import java.time.Period;
 import java.util.Objects;
-import java.util.Date;
 
 /**
     * Конструктор класу Pet.
@@ -12,13 +12,14 @@ import java.util.Date;
     * @param species Вид домашнього улюбленця.
     * @param owner Власник домашнього улюбленця.
     */
+
 public class Pet {
     private String name;
-    private Date birthDate;
+    private LocalDate birthDate;
     private String species;
     private Owner owner;
 
-    public Pet(String name, Date birthDate, String species, Owner owner) {
+    public Pet(String name, LocalDate birthDate, String species, Owner owner) {
         this.name = name;
         this.birthDate = birthDate;
         this.species = species;
@@ -29,19 +30,12 @@ public class Pet {
         return name;
     }
 
-    public Date getBirthDate() {
+    public LocalDate getBirthDate() {
         return birthDate;
     }
 
     public int getAge() {
-        Calendar birth = Calendar.getInstance();
-        birth.setTime(birthDate);
-        Calendar today = Calendar.getInstance();
-        int age = today.get(Calendar.YEAR) - birth.get(Calendar.YEAR);
-        if (today.get(Calendar.DAY_OF_YEAR) < birth.get(Calendar.DAY_OF_YEAR)) {
-            age--;
-        }
-        return age;
+        return Period.between(birthDate, LocalDate.now()).getYears();
     }
 
     public String getSpecies() {
@@ -54,7 +48,7 @@ public class Pet {
 
     @Override
     public String toString() {
-        return "Pet{name='" + name + "', age=" + birthDate + ", species='" + species + "', owner=" + owner + "}";
+        return "Pet{name='" + name + "', age=" + getAge() + ", species='" + species + "', owner=" + owner + "}";
     }
 
     @Override
@@ -72,4 +66,6 @@ public class Pet {
     public int hashCode() {
         return Objects.hash(name, birthDate, species, owner);
     }
+
 }
+
